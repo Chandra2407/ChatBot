@@ -199,3 +199,57 @@ docker volume prune
 - You can upgrade from static frontend to Dockerized frontend later using the same backend + Ollama setup.
 - For production VPS deployment, update `docker-compose.yml` ports and security settings as required.
 
+
+## List of Docker commands
+
+🟩 General Info & Status
+Command	Description
+| Command          | Description                                          |
+| ---------------- | ---------------------------------------------------- |
+| `docker info`    | Show system-wide info (containers, images, storage)  |
+| `docker version` | Display Docker client and server version             |
+| `docker stats`   | Live resource usage (CPU, RAM) of running containers |
+| `docker ps`      | List running containers                              |
+| `docker ps -a`   | List all containers (including stopped)              |
+
+🟨 Image Management
+
+| Command                   | Description                                      |
+| ------------------------- | ------------------------------------------------ |
+| `docker images`           | List all images                                  |
+| `docker pull <image>`     | Download image from Docker Hub                   |
+| `docker rmi <image>`      | Remove image                                     |
+| `docker build -t myapp .` | Build image from Dockerfile in current directory |
+
+
+
+🟦 Container Management
+| Command                          | Description                         |
+| -------------------------------- | ----------------------------------- |
+| `docker run -it ubuntu bash`     | Run container interactively         |
+| `docker exec -it <container> sh` | Open shell inside running container |
+| `docker start <container>`       | Start a stopped container           |
+| `docker stop <container>`        | Stop a running container            |
+| `docker restart <container>`     | Restart a container                 |
+| `docker rm <container>`          | Remove a stopped container          |
+| `docker logs <container>`        | View logs of a container            |
+
+
+🟧 Volumes & Storage
+| Command                     | Description                                               |
+| --------------------------- | --------------------------------------------------------- |
+| `docker volume ls`          | List volumes                                              |
+| `docker volume rm <volume>` | Remove a volume                                           |
+| `docker system df`          | Show disk usage by Docker                                 |
+| `docker system prune`       | Remove unused containers, images, volumes (⚠️ cleans up!) |
+ docker system prune -a --volumes
+
+
+🟪 Docker Compose
+
+| Command                | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `docker compose up`    | Start services from `docker-compose.yml` |
+| `docker compose down`  | Stop and remove services                 |
+| `docker compose logs`  | View logs from all services              |
+| `docker compose build` | Build/rebuild services                   |
