@@ -253,3 +253,8 @@ Command	Description
 | `docker compose down`  | Stop and remove services                 |
 | `docker compose logs`  | View logs from all services              |
 | `docker compose build` | Build/rebuild services                   |
+docker compose up --build
+
+
+wsl --shutdown
+
