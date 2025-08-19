@@ -255,6 +255,24 @@ Command	Description
 | `docker compose build` | Build/rebuild services                   |
 docker compose up --build
 
+📋 Docker Network Commands Cheat Sheet
+
+| 🧪 **Command**                                              | 🧩 **Action**                       |
+| ------------------------------------------------------------| ----------------------------------- |
+| `docker network ls`                                         | List all networks                   |
+| `docker network inspect <network-name>`                     | Inspect a network                   |
+| `docker network create <network-name>`                      | Create a new network                |
+| `docker network create --subnet 192.168.1.0/24 my_net`      | Create network with custom subnet   |
+| `docker network rm <network-name>`                          | Remove a network                    |
+| `docker network connect <network-name> <container-id>`      | Connect container to a network      |
+| `docker network disconnect <network-name> <container-id>`   | Disconnect container from a network |
+| `docker run --network <network-name> ...`                   | Run container with specific network |
+| `docker run --network host ...`                             | Run container on host network       |
+| `docker run --network none ...`                             | Run container with no network       |
+| `docker exec -it <container1> ping <container2>`            | Ping from one container to another  |
+
+| `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container>` | Get container IP address |
+
 
 wsl --shutdown
 

@@ -10,3 +10,18 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+@layer components {
+
+    .message {
+        @apply rounded-lg;
+    }
+
+    .message.user {
+        @apply self-end;
+    }
+
+    .message.bot {
+        @apply self-start;
+    }
+}
