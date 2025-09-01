@@ -99,7 +99,7 @@ export const store = createStore(
         theme: themeReducer,
         async: asyncReducer
     }),
-    applyMiddleware(thunk)
+    applyMiddleware(logger, thunk)
 );
 
 type Action = {

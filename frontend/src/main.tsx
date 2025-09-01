@@ -12,3 +12,6 @@ createRoot(document.getElementById('root')!).render(
     </Provider>
   </StrictMode>,
 )
+
+// @ts-ignore
+window.store = store

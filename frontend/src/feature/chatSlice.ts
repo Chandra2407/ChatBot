@@ -15,24 +15,24 @@ export interface ChatState {
 
 const initialState: ChatState = {
     messages: [
-        { id: '1', text: 'Welcome to the catGPT!', type: 'bot' },
-        { id: '2', text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' },
-        { id: '1', text: 'Welcome to the catGPT!', type: 'bot' },
-        { id: '2', text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' },
-        { id: '1', text: 'Welcome to the catGPT!', type: 'bot' },
-        { id: '2', text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '2', text: 'How can I assist you today?', type: 'bot' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' },
-        { id: '3', text: 'I need help with my account. How can I assist you today?', type: 'user' }
+        { id: crypto.randomUUID(), text: 'Welcome to the catGPT!', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' },
+        { id: crypto.randomUUID(), text: 'Welcome to the catGPT!', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' },
+        { id: crypto.randomUUID(), text: 'Welcome to the catGPT!', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today? How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'How can I assist you today?', type: 'bot' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' },
+        { id: crypto.randomUUID(), text: 'I need help with my account. How can I assist you today?', type: 'user' }
     ]
 };
 

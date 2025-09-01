@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     }, []);
 
     return (
-        <header id="pageHeader" className={`sticky top-0 left-0 w-full h-16 transition-colors duration-300 z-50 flex items-center justify-between p-4 bg-gray-900`}>
+        <header id="pageHeader" className={`sticky top-0 left-0 w-full h-[4rem] transition-colors duration-300 z-50 flex items-center justify-between p-4 bg-gray-900`}>
             <section className="logo font-bold">
                 CatGPT
             </section>
