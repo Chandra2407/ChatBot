@@ -5,11 +5,13 @@ const http = require("http")
 const fs = require("fs")
 const path = require("path")
 
+const crypto = require("./calc/thread")
+
 // require("./calc/buffer")
 
 // require("./calc/fs")
 // require("./calc/fspromise")
-require("./calc/stream")
+// require("./calc/stream")
 
 // require("./calc/sub") //module caching
 // const add = require("./calc/add")
@@ -91,7 +93,7 @@ app.get("/posts", async (req, res) => {
     }
 });
 
-// app.listen(3000, () => console.log("Backend running on port 3000"));
+app.listen(3000, () => console.log("Backend running on port 3000"));
 
 const nodeServer = http.createServer((req, res) => {
 
@@ -115,6 +117,6 @@ const nodeServer = http.createServer((req, res) => {
     // })
 })
 
-nodeServer.listen(3000, () => {
-    console.log("node server running on port 3001")
-})
+// nodeServer.listen(3000, () => {
+//     console.log("node server running on port 3001")
+// })
